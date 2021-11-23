@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   preset: 'ts-jest',
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
   transform: {
