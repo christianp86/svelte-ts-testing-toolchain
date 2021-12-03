@@ -109,7 +109,20 @@ test('shows proper heading when rendered', () => {
 The mist important part is the comment on top of our .spec.ts file. This indicates jest that we want to test using jest-dom.
 The default is a node.js like environment. If you only want to test your svelte components and no apis, stores, ... you could also add this directly into your jest config.
 
+```sh
+testEnvironment: 'jsdom',
+```
+
 More detailed information can be found [here](https://jestjs.io/docs/configuration#testenvironment-string).
+
+Now let's run our test again.
+
+```sh
+npm run test
+```
+
+You should see this result
+![successfull test run](./images/test-success.png)
 
 ### Additional info and links
 
@@ -119,6 +132,7 @@ Also check out the already [existing recipe for testing svelte components](https
 I have a added all links and resources I used to build this recipe for the sveltekit ts toolchain.
 
 ### Sources
+
 - [GitHub Repo for this toolchain](https://github.com/christianp86/svelte-ts-testing-toolchain)
 - [Setup Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/setup)
 - [Setup Svelte Jester](https://github.com/mihar-22/svelte-jester#typescript)
